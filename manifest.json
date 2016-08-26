@@ -1,16 +1,13 @@
 {
   "name": "SafeClick",
   "version": "0.0.1",
-  "description": "Alerts users of websites that are potentially using links with target='_blank' for phishing purposes",
+  "description": "Adds rel='noopener' to all anchors with target='_blank' that don't have it.",
   "manifest_version": 2,
   "content_scripts": [
     {
       "matches": [
         "http://*/*",
         "https://*/*"
-      ],
-      "css": [
-        "custom.css"
       ],
       "js": [
         "index.js"
