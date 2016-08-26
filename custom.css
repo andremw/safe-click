@@ -1,0 +1,29 @@
+.__modal-wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  max-width: 630px;
+  min-width: 320px;
+  height: auto;
+  z-index: 2000;
+	backface-visibility: hidden;
+	transform: translateX(-50%) translateY(-50%);
+
+  background-color: #e74c3c;
+}
+
+.__modal-wrapper.hidden {
+  visibility: hidden;
+}
+
+.__modal-wrapper h1 {
+  position: relative;
+  top: 0;
+  text-align: center;
+  background: rgba(0,0,0,0.1);
+}
+
+.__modal-wrapper .content {
+  position: relative;
+  text-align: center;
+}
